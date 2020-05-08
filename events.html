@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDS | Events</title>
+    <!-- Connections -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/layouts/events.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <!-- Header section contains the nav bar as well as the hero image -->
+        <header id="content-0">
+            <nav>
+                <div class="topnav" id="myTopnav">
+                    <a id="home-btn" href="./index.html">Home</a>
+                    <a href="./background.html">Background</a>
+                    <a href="./events.html" class="active">Events</a>
+                    <a href="./projects.html">Projects</a>
+                    <a href="./gallery.html">Gallery</a>
+                    <a href="./links.html">Links</a>
+                    <a href="./contact.html">Contact</a>
+                    <!-- Burger button replacement - I created my own burger icon so as to avoid using any frameworks and to increase the percentage of original content -->
+                    <a href="javascript:void(0);" class="icon" id="navDrop" onclick="navControl()"><img class="tiny-img" src="./images/illustrator-art/Burger.png" alt="Buger icon"></a>
+                </div>
+            </nav>
+            <div class="parel" id="content-0-a">
+                <!-- Header image inserted via css file -->
+            </div>
+        </header>
+        <!-- Main section contains content spacific to this page -->
+        <main class="" id="content-1">
+            <div id="top-msg">
+                <h1>Events</h1>
+            </div>
+            <!-- Callender navigation -->
+            <div id="content-1-a">
+                <div id="gallery">
+                    <div class="month">      
+                        <ul>
+                          <li>
+                            April<br>
+                            <span>2020</span>
+                          </li>
+                        </ul>
+                      </div>
+                      
+                      <ul class="weekdays">
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li>Sa</li>
+                        <li>Su</li>
+                      </ul>
+                      
+                      <ul class="days">  
+                        <li></li>
+                        <li></li>
+                        <li><a href="javascript:changeEVENT(1);" class="event-day" id="meeting-day-1">01</a></li>
+                        <li>02</li>
+                        <li>03</li>
+                        <li>04</li>
+                        <li>05</li>
+                        <li>06</li>
+                        <li>07</li>
+                        <li><a href="javascript:changeEVENT(2);" class="event-day" id="meeting-day-2">08</a></li>
+                        <li>09</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li><a href="javascript:changeEVENT(3);" class="event-day" id="meeting-day-3">15</a></li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li><a href="javascript:changeEVENT(4);" class="event-day" id="meeting-day-4">21</a></li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li><a href="javascript:changeEVENT(5);" class="event-day" id="meeting-day-4">29</a></li>
+                        <li><a href="javascript:changeEVENT(6);" class="event-day" id="meeting-day-4">30</a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                  </div>
+
+                <!-- The description for the event -->
+                <div id="event-self" class="card">
+                    <h1 id="eventShowcase-TITLE">Event 4</h1>
+                    <img id="eventShowcase-IMG" src="./images/projectc.png" alt="Image of pong developed by the software development society.">
+                    <p id="eventShowcase-DESC">
+                        <strong>Activity:</strong>Add user authentication to pong.
+                        <br>
+                        <strong>Date:</strong>21/04/2020.
+                        <br>
+                        <strong>Status:</strong>Incomplete.
+                        <br>
+                        <strong>Location:</strong>Video call.
+                    </p>
+                    <a href="mailto:k00252751@student.lit.ie?subject=Join Event out mailto! &body=Hey I would like to join this event."><button class="btn-small" href="./contact.html">Join</button></a>
+                </div>
+            </div>
+            <div id="content-1-b">
+                <!-- Cards for each event -->
+                <div id="event-1" class="card status-complete">
+                    <h1 id="event1-TITLE">Event 1</h1>
+                    <p id="event1-DESC">
+                        <strong>Activity:</strong>Design a firebase database for saving user scores in pong.
+                        <br>
+                        <strong>Date:</strong>21/04/2020.
+                        <br>
+                        <strong>Status:</strong>Complete ✔️.
+                        <br>
+                        <strong>Location:</strong>Video call.
+                    </p>
+                </div>
+
+                <div id="event-2" class="card status-complete">
+                    <h1 id="event2-TITLE">Event 2</h1>
+                    <p id="event2-DESC">
+                        <strong>Activity:</strong>Implement database design.
+                        <br>
+                        <strong>Date:</strong>08/04/2020.
+                        <br>
+                        <strong>Status:</strong>Complete ✔️.
+                        <br>
+                        <strong>Location:</strong>Video call.
+                    </p>
+                </div>
+
+                <div id="event-3" class="card status-complete">
+                    <h1 id="event3-TITLE">Event 3</h1>
+                    <p id="event3-DESC">
+                        <strong>Activity:</strong>Add PWA functionality to pong.
+                        <br>
+                        <strong>Date:</strong>15/04/2020.
+                        <br>
+                        <strong>Status:</strong>Complete ✔️.
+                        <br>
+                        <strong>Location:</strong>Video call.
+                    </p>
+                </div>
+
+                <div id="event-4" class="card focus">
+                    <h1 id="event4-TITLE">Event 4</h1>
+                    <p id="event4-DESC">
+                        <strong>Activity:</strong>Add user authentication to pong.
+                        <br>
+                        <strong>Date:</strong>21/04/2020.
+                        <br>
+                        <strong>Status:</strong>Incomplete.
+                        <br>
+                        <strong>Location:</strong>Video call.
+                    </p>
+                </div>
+
+                <div id="event-5" class="card">
+                    <h1 id="event5-TITLE">Event 5</h1>
+                    <p id="event5-DESC">
+                        <strong>Activity:</strong>Stress test pong database internally.
+                        <br>
+                        <strong>Date:</strong>29/04/2020.
+                        <br>
+                        <strong>Status:</strong>Incomplete.
+                        <br>
+                        <strong>Location:</strong>Video call.
+                    </p>
+                </div>
+
+                <div id="event-6" class="card">
+                    <h1 id="event6-TITLE">Event 6</h1>
+                    <p id="event6-DESC">
+                        <strong>Activity:</strong>Deploy pong to firebase server.
+                        <br>
+                        <strong>Date:</strong>30/04/2020.
+                        <br>
+                        <strong>Status:</strong>Incomplete.
+                        <br>
+                        <strong>Location:</strong>Video call.
+                    </p>
+                </div>
+            </div>
+        </main>
+        <!-- Footer contains some additional links -->
+        <footer class="parel-short" id="content-2">
+            <div id="content-2-a">
+                <a href="https://codesandbox.io/u/natepy" target="blank">
+                    <button class="btn">Code base</button>
+                </a>
+            </div>
+            <div id="content-2-b">
+                <a href="https://github.com/natepy?tab=repositories" target="blank">
+                    <button class="btn">Github</button>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

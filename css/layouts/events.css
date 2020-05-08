@@ -1,0 +1,182 @@
+/* 
+    Styles exclusive to the events page
+        id styles
+        grid layout tweaks
+        media query tweaks
+*/
+/* Setting the header image */
+#content-0-a{
+    background: linear-gradient(315deg, rgba(83, 120, 149, 0.6), rgba(9, 32, 63, 0.4)), url("../../images/lit.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#content-2{
+    border-top: 0.5rem solid black;
+}
+/* Calender related styling */
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #537895 linear-gradient(315deg, rgba(83, 120, 149, 1), rgba(9, 32, 63, 1));
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.card{
+  padding-bottom: 2rem;
+}
+
+
+
+.weekdays {
+  margin: 0;
+  padding: 10px;
+  background-color: #2C3531;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 12%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  background: #eee;
+  margin: 0;
+  padding: 10px;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 12%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.days li .event-day {
+  padding: 5px;
+  background: #537895;
+  color: black;
+}
+/* Event display styling */
+.eventShowcase{
+  background-color: #2C3531;
+  color: white;
+}
+#row-1-title, #row-2-title{
+  margin: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.status-complete{
+  background-color: grey;
+}
+
+.card{
+  width: 20vw;
+  display: grid;
+  grid-template-columns: auto;
+}
+.card h1, .card p{
+  padding-left: 2rem;
+}
+
+/* 
+    Media query - tweaking the grid structure for the page spacific content
+*/
+@media only screen and (max-width: 900px)
+{
+    /* HIDDEN ELEMENTS */
+    .card{
+      width: 90vw;
+    }
+    .weekdays,
+    .days,
+    #event-self{
+        display: none;
+    }
+
+    #content-1-a{
+        display: grid;
+        grid-column: auto;
+        grid-template-columns: auto;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+        column-gap: 2rem;
+    }
+        #gallery{
+            grid-column: auto;
+        }
+    #content-1-b{
+        display: grid;
+        grid-column: auto;
+        margin: auto;
+        margin-bottom: 2rem;
+        row-gap: 2rem;
+    }
+}
+@media only screen and (min-width: 901px)
+{
+    #content-1-a{
+        display: grid;
+        grid-column: 1/13;
+        grid-template-columns: repeat(12, auto);
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+        column-gap: 2rem;
+    }
+        #gallery{
+            grid-column: 1/7;
+        }
+        #event-self{
+            grid-column: 7/13;
+            padding-bottom: 0;
+        }
+    #content-1-b{
+        display: grid;
+        grid-column: 1/13;
+        grid-template-columns: repeat(12, auto);
+        margin: auto;
+        margin-bottom: 2rem;
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+        #event-1{
+            grid-column: 1/5;
+        }
+        #event-2{
+            grid-column: 5/8;
+        }
+        #event-3{
+            grid-column: 8/13;
+        }
+        #event-4{
+            grid-column: 1/5;
+            border: 0.5rem solid black;
+        }
+        #event-5{
+            grid-column: 5/8;
+        }
+        #event-6{
+            grid-column: 8/13;
+        }
+}

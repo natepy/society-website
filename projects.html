@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDS | Projects</title>
+    <!-- Connections -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/layouts/projects.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <!-- Header section contains the nav bar as well as the hero image -->
+        <header id="content-0">
+            <nav>
+                <div class="topnav" id="myTopnav">
+                    <a id="home-btn" href="./index.html">Home</a>
+                    <a href="./background.html">Background</a>
+                    <a href="./events.html">Events</a>
+                    <a href="./projects.html" class="active">Projects</a>
+                    <a href="./gallery.html">Gallery</a>
+                    <a href="./links.html">Links</a>
+                    <a href="./contact.html">Contact</a>
+                    <!-- Burger button replacement - I created my own burger icon so as to avoid using any frameworks and to increase the percentage of original content -->
+                    <a href="javascript:void(0);" class="icon" id="navDrop" onclick="navControl()"><img class="tiny-img" src="./images/illustrator-art/Burger.png" alt="Buger icon"></a>
+                </div>
+            </nav>
+            <div class="parel" id="content-0-a">
+                
+            </div>
+        </header>
+        <!-- Main section contains content spacific to this page -->
+        <main class="" id="content-1">
+            <div id="top-msg">
+                <h1>Projects</h1>
+            </div>
+            <div id="content-1-a">
+                <div class="card" id="project1">
+                    <h2>Project 1</h2>
+                </div>
+                <div class="card" id="project2">
+                    <h2>Project 2</h2>
+                </div>
+                <div class="card" id="project3">
+                    <h2>Project 3</h2>
+                </div>
+            </div>
+            <div id="content-1-b">
+                <div class="card" id="showcase">
+                    <img id="showcase-img" src="./images/projecta.png" alt="LIT software development society online portfolio">
+                    <div id="description">
+                        <h2 id="showcase-title">Project 1 | Intro to web development</h2>
+                        <p id="showcase-description">
+                        <!-- Text inserted from javascript handler -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Show all as cards when in mobile view -->
+            <div id="mcontent">
+                <div class="card" id="showcase">
+                    <img id="showcase-img" src="./images/projecta.png" alt="LIT software development society online portfolio">
+                    <div class="fade" id="description">
+                        <h2 id="showcase-title">Project 1 | Intro to web development</h2>
+                        <p id="showcase-description">
+                            For our first project we developed the layout for our online portfolios.
+                            A base layout is given and each member improves upon it to make it their own.
+                            The goal of this project is to learn the basics of HTML and CSS.
+                            Upon completion of future projects members will come back to this portfolio and link society projects and make a note of their contribution.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" id="showcase">
+                    <img id="showcase-img" src="./images/projectb.png" alt="LIT software development society kanban board project">
+                    <div class="fade" id="description">
+                        <h2 id="showcase-title">Project 2 | Database project</h2>
+                        <p id="showcase-description">
+                            For our second project we developed a web based kanban board application.
+                            The motive behind this project was the introduce modern web technologies such as cloud database and javascript.
+                            
+                            From this project members were able to read/write to firebase firestore (database technology).
+                            Create structured layouts with css grids.
+                            Modify html content dynamically with javascript events.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" id="showcase">
+                    <img id="showcase-img" src="./images/projectc.png" alt="LIT software development society pong video game project">
+                    <div class="fade" id="description">
+                        <h2 id="showcase-title">Project 3 | Video game development</h2>
+                        <p id="showcase-description">
+                            For our final project we developed a video game (pong) using javascript.
+                            We learned how to read keyboard inputs and assign events to each key (such as player movement) as well as how to create basic graphics with html canvas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer contains some additional links -->
+        <footer class="parel-short" id="content-2">
+            <div id="content-2-a">
+                <a href="https://codesandbox.io/u/natepy" target="blank">
+                    <button class="btn">Code base</button>
+                </a>
+            </div>
+            <div id="content-2-b">
+                <a href="https://github.com/natepy?tab=repositories" target="blank">
+                    <button class="btn">Github</button>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

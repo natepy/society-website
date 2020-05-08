@@ -1,0 +1,92 @@
+/* 
+    Styles exclusive to the gallery page
+        id styles
+        grid layout tweaks
+        media query tweaks
+*/
+/* Setting the header image */
+#content-0-a{
+    background: linear-gradient(315deg, rgba(83, 120, 149, 0.6), rgba(9, 32, 63, 0.4)), url("../../images/heroc.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* 
+    Media query - tweaking the grid structure for the page spacific content
+*/
+@media only screen and (max-width: 900px)
+{
+    img{
+        margin-bottom: 2rem;
+    }
+    #content-1-a{
+        grid-column: auto;
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: center;
+        
+    }
+    #content-1-a{
+        grid-column: auto;
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+        margin: auto;
+    }
+        #mainIMG{
+            grid-column: 1/13;
+            margin-bottom: 2rem;
+        }
+        #prev{
+            grid-column: 1/7;
+        }
+        #next{
+            grid-column: 7/13;
+        }
+    #content-1-b{
+        margin-top: 2rem;
+        grid-column: auto;
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: center;
+    }
+        #row-1{
+            grid-column: auto;
+        }
+        #row-2{
+            grid-column: auto;
+        }
+}
+@media only screen and (min-width: 901px)
+{
+    #content-1-a{
+        grid-column: 1/13;
+        display: grid;
+        grid-template-columns: repeat(12, auto);
+        text-align: center;
+        margin: auto;
+    }
+        #mainIMG{
+            grid-column: 1/13;
+            margin-bottom: 2rem;
+        }
+        #prev{
+            grid-column: 1/7;
+        }
+        #next{
+            grid-column: 7/13;
+        }
+    #content-1-b{
+        margin-top: 2rem;
+        grid-column: 1/13;
+        display: grid;
+        grid-template-columns: repeat(12, auto);
+        text-align: center;
+    }
+        #row-1{
+            grid-column: 1/13;
+        }
+        #row-2{
+            grid-column: 1/13;
+        }
+}

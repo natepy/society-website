@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDS | Gallery</title>
+    <!-- Connections -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/layouts/gallery.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <!-- Header section contains the nav bar as well as the hero image -->
+        <header id="content-0">
+            <nav>
+                <div class="topnav" id="myTopnav">
+                    <a id="home-btn" href="./index.html">Home</a>
+                    <a href="./background.html">Background</a>
+                    <a href="./events.html">Events</a>
+                    <a href="./projects.html">Projects</a>
+                    <a href="./gallery.html" class="active">Gallery</a>
+                    <a href="./links.html">Links</a>
+                    <a href="./contact.html">Contact</a>
+                    <!-- Burger button replacement - I created my own burger icon so as to avoid using any frameworks and to increase the percentage of original content -->
+                    <a href="javascript:void(0);" class="icon" id="navDrop" onclick="navControl()"><img class="tiny-img" src="./images/illustrator-art/Burger.png" alt="Buger icon"></a>
+                </div>
+            </nav>
+            <div class="parel" id="content-0-a">
+                <!-- Header image inserted via css file -->
+            </div>
+        </header>
+        <!-- Main section contains content spacific to this page -->
+        <main class="" id="content-1">
+            <div id="top-msg">
+                <h1>Gallery</h1>
+            </div>
+            <div id="content-1-a">
+                <!-- main image -->
+                <img src="./images/heroa.jpg" id="mainIMG" alt="Software development society project 1 | Online portfolio">
+                <!-- next and previous buttons -->
+                <div id="prev">
+                    <!-- calling the prev function -->
+                    <a href="javascript:prev()" ><button class="btn-small"> < </button></a>
+                </div>
+                <div id="next">
+                    <!-- calling the next function -->
+                    <a href="javascript:next()"><button class="btn-small"> > </button></a>
+                </div>
+            </div>
+            <div id="content-1-b">
+                <!-- preview of image -->
+                <div id="row-1">
+                    <img src="./images/thumbnails/th-heroa.jpg" id="pic1_img" alt="Software development society | project 1 code base | angle 1.">
+                    <img src="./images/thumbnails/th-herob.PNG" id="pic2_img" alt="Motivational image with a software development theme.">
+                    <img src="./images/thumbnails/th-heroc.jpg" id="pic3_img" alt="Software development society | project 1 code base | angle 2.">
+                    <img src="./images/thumbnails/th-herod.jpg" id="pic4_img" alt="Software development society | project 2 code base | angle 1.">
+                    <img src="./images/thumbnails/th-lit.jpg" id="pic5_img" alt="Exterior of the LIT moylish campus.">
+                </div>
+                <div id="row-2">
+                    <img src="./images/thumbnails/th-projecta.png" id="pic6_img" alt="Software development society project 1 | Online portfolio">
+                    <img src="./images/thumbnails/th-projectb.png" id="pic7_img" alt="Software development society project 2 | Kanban board">
+                    <img src="./images/thumbnails/th-projectc.png" id="pic8_img" alt="Software development society project 3 | Web based video game | Pong">
+                    <img src="./images/thumbnails/th-soc.jpg" id="pic9_img" alt="Software development society project 3 | Web based video game | Pong">
+                    <img src="./images/thumbnails/th-heroe.jpg" id="pic10_img" alt="Close up of software development society email.">
+                </div>
+            </div>
+        </main>
+        <!-- Footer contains some additional links -->
+        <footer class="parel-short" id="content-2">
+            <div id="content-2-a">
+                <a href="https://codesandbox.io/u/natepy" target="blank">
+                    <button class="btn">Code base</button>
+                </a>
+            </div>
+            <div id="content-2-b">
+                <a href="https://github.com/natepy?tab=repositories" target="blank">
+                    <button class="btn">Github</button>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDS | Contact</title>
+    <!-- Connections -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/layouts/contact.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <!-- Header section contains the nav bar as well as the hero image -->
+        <header id="content-0">
+            <nav>
+                <div class="topnav" id="myTopnav">
+                    <a id="home-btn" href="./index.html">Home</a>
+                    <a href="./background.html">Background</a>
+                    <a href="./events.html">Events</a>
+                    <a href="./projects.html">Projects</a>
+                    <a href="./gallery.html">Gallery</a>
+                    <a href="./links.html">Links</a>
+                    <a href="./contact.html" class="active">Contact</a>
+                    <!-- Burger button replacement - I created my own burger icon so as to avoid using any frameworks and to increase the percentage of original content -->
+                    <a href="javascript:void(0);" class="icon" id="navDrop" onclick="navControl()"><img class="tiny-img" src="./images/illustrator-art/Burger.png" alt="Buger icon"></a>
+                </div>
+            </nav>
+            <div class="parel" id="content-0-a">
+                <!-- Header file inserted via css file -->
+            </div>
+        </header>
+        <!-- Main section contains content spacific to this page -->
+        <main class="" id="content-1">
+            <div id="top-msg">
+                <h1>Contact</h1>
+            </div>
+            <div id="content-1-a">
+                <fieldset>
+                    <legend>Contact us</legend>
+                    <form novalidate method="POST" action="http://litstudentprojects.net/rwd-a2-response.php" id="members-form" onsubmit="return validate();">
+                        <label class="labels" id="name_" for="name">Name</label>
+                        <input class="inputs" type="text" name="name" id="name">
+
+                        <label class="labels" id="address_" for="address">Address</label>
+                        <textarea class="inputs" name="address" id="address" rows="5"></textarea>
+
+                        <label class="labels" id="mobile_" for="mobile">Mobile</label>
+                        <input class="inputs"  type="text" name="mobile" id="mobile">
+
+                        <label class="labels" id="email1_" for="email1">Email</label>
+                        <input class="inputs" type="email" name="email1" id="email1">
+                        
+                        <label class="labels" id="email2_" for="email2">Re-type your email</label>
+                        <input class="inputs" type="email" name="email2" id="email2">
+
+                        <label class="labels" id="member_" for="member">Are you currently a member? (Yes/No)</label>
+                        <div  class="inputs" id="member">
+                            <input type="radio"  name="member" value="yes">
+                            <input type="radio"  name="member" value="no">
+                        </div>
+                        
+
+                        <label class="labels" id="query_" for="query">Inquiry</label>
+                        <textarea  class="inputs" name="query" id="query"rows="5"></textarea>
+                        <label for="submit" id="fill"></label>
+                        <input type="submit" class="" id="submit" value="Submit">
+                    </form>
+                </fieldset>
+            </div>
+            <div id="content-1-b">
+                <div class="card" id="contact-info">
+                    <h1>Contact Information</h1>
+                    <h2>Address</h2>
+                    <a href="http://maps.google.com/maps?q=Moylish,+Limerick,+V94+EC5T" target="blank">
+                        <address>
+                            &emsp;Moylish,<br>
+                            &emsp;Limerick,<br>
+                            &emsp;V94 EC5T
+                        </address>
+                    </a>
+                    <h2>Telephone</h2>
+                    <a href="tel:0892203208">&emsp;0892203208</a>
+                    <h2>Email</h2>
+                    <a href="mailto:k00252751@student.lit.ie">&emsp;K00252751@student.lit.ie</a>
+                    <h2>Facebook</h2>
+                    <a href="https://www.facebook.com/LITStudentsUnion/" target="blank">&emsp;LIT SU</a>
+                </div>
+            </div>
+        </main>
+        <!-- Footer contains some additional links -->
+        <footer class="parel-short" id="content-2">
+            <div id="content-2-a">
+                <a href="https://codesandbox.io/u/natepy" target="blank">
+                    <button class="btn">Code base</button>
+                </a>
+            </div>
+            <div id="content-2-b">
+                <a href="https://github.com/natepy?tab=repositories" target="blank">
+                    <button class="btn">Github</button>
+                </a>
+            </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

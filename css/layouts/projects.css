@@ -1,0 +1,105 @@
+/* 
+    Styles exclusive to the projects page
+        id styles
+        grid layout tweaks
+        media query tweaks
+*/
+/* ID styles - setting the header image */
+#content-0-a{
+    background: linear-gradient(315deg, rgba(83, 120, 149, 0.6), rgba(9, 32, 63, 0.4)), url("../../images/herod.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* 
+    Media query - tweaking the grid structure for the page spacific content
+*/
+@media only screen and (max-width: 999px)
+{
+    .card img{
+        max-width: 100%;
+    }
+    #content-1-a{
+        display: none;
+    }
+    #content-1-b{
+        display: none;
+    }
+    p{
+        width: 80%;
+    }
+    h2, p{
+        padding-left: 1rem;
+    }
+    #mcontent{
+        display: grid;
+        grid-template-columns: auto;
+        margin-top: 2rem;
+        row-gap: 2rem;
+    }
+    .card{
+        margin: auto;
+    }
+}
+@media only screen and (min-width: 1000px)
+{
+    h2{
+        padding-left: 1rem;
+    }
+    #mcontent{
+        display: none;
+    }
+    #content-1-a{
+        grid-column: 1/13;
+        display: grid;
+        grid-template-columns: repeat(12, auto);
+        column-gap: 2rem;
+        margin-bottom: 2rem;
+    }
+        #project1{
+            grid-column: 1/5;
+            width: 100%;
+        }
+        #project1:hover{
+            background: #537895 linear-gradient(315deg, rgba(83, 120, 149, 1), rgba(9, 32, 63, 1));
+            color: white;
+        }
+        #project2{
+            grid-column: 5/9;
+            width: 100%;
+        }
+        #project2:hover{
+            background: #537895 linear-gradient(315deg, rgba(83, 120, 149, 1), rgba(9, 32, 63, 1));
+            color: white;
+        }
+        #project3{
+            grid-column: 9/13;
+            width: 100%;
+        }
+        #project3:hover{
+            background: #537895 linear-gradient(315deg, rgba(83, 120, 149, 1), rgba(9, 32, 63, 1));
+            color: white;
+        }
+    #content-1-b{
+        grid-column: 1/13;
+        display: grid;
+        grid-template-columns: repeat(12, auto);
+    }
+        #showcase{
+            grid-column: 1/13;
+            display: grid;
+            grid-template-columns: repeat(12, auto);
+            width: 100%;
+        }
+            #showcase-img{
+                grid-column: 1/7;
+                margin: auto;
+            }
+            #description{
+                grid-column: 7/13;
+                padding: 2rem;
+                letter-spacing: 0.1rem;
+                word-spacing: 0.2rem;
+                line-height: 1.5rem;
+            }
+}
